@@ -293,6 +293,23 @@ li{
     padding:5px;
     padding-top:10px;
 }
+.number_trois{
+    display:inline-block;
+    border-radius:50%;
+    padding-bottom:0px;
+    border:2px solid orange;
+    height:55px;
+    width:55px;
+    vertical-align:left;
+    transform: translate(-50%,-50%);
+    color:orange;
+    font-size:250%;
+    font-weight:300;
+    right:103.5%;
+    position:absolute;
+    padding:5px;
+    padding-top:10px;
+}
 .number_descript{
     position:relative;
     top:-0.5em;
