@@ -8,10 +8,7 @@ header{
     width:100vw;
     height:100vh;
     display:block;
-    flex-flow: row nowrap;
-    justify-content:space-around;
     margin:0;
-    padding:5px;
     background:linear-gradient(
         rgba(0, 0, 0, 0.7), 
         rgba(0, 0, 0, 0.7)
@@ -22,7 +19,58 @@ header{
     font-size:20px;
     font-weight:300;
     font-family: 'Lato', sans-serif;
+    position:relative;
+    z-index:3
     
+}
+.header{
+    position:relative;
+    z-index:3;
+}
+.menu_hide{
+    background-color:white;
+    z-index:2;
+    position:fixed;
+    width:100vw;
+    height:8vh;
+    display:flex;
+    flex-direction:row;
+    box-shadow:2px 2px 5px gray;
+}
+.menu_hide ul{
+    display:inline-flex;
+    float:right;
+    justify-content: flex-end;
+    margin-right:20%;
+    flex-direction: row;
+    list-style-type: none;
+    text-transform:uppercase;
+    color:white;
+    width:100%;   
+}
+.menu_hide li{
+    margin-left:40px;
+    font-size:90%;
+    color:white;
+    padding:10px;
+    justify-content:center;
+}
+.menu_hide a {
+    text-decoration:none;
+    color:black;
+    
+}
+.menu_hide a:hover{
+    
+    border-bottom: 2px solid orange;
+}
+
+.menu_hide img{
+    height: 50px;
+    width: auto;
+    float: left;
+    margin-top: 10px;
+    margin-left:500px;
 }
 header a{
     text-decoration:none;
@@ -53,6 +101,7 @@ h3{
     left:50%;
     transform: translate(-50%, -50%);
     position:relative;
+    z-index:1;
 }
 
 .text_block_un{
@@ -89,7 +138,6 @@ header li:hover{
 }
 .header_box{
     position:absolute;
-    width:1140px;
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
@@ -387,17 +435,88 @@ cite{
     flex-flow:column wrap;
     height:35vh;
     margin-top:25px;
-    
+}
+.box_form input {
+  
+    width:300px;
+}
+select{
+    width:315px;
 }
 
 .text_form{
-   
+    text-align:left;
     vertical-align:top;
     margin-right:10px;
+}
+input[type=checkbox]{
+    width: 1px;
+}
+.checkbox{
+    margin-right:220px;
 }
 
 textarea{
     width:300px;
     height:100px;
-
+}
+.form_row{
+    display:flex;
+    width:500px;
+    justify-content:space-between;  
+}
+.button_send{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color:white;
+    background-color:orange;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    margin-right:15px;
+    margin-left:200px;
+}
+footer{
+    background-color:#555;
+    margin: 0 auto;
+    padding:10px;
+}
+.footer_ul{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-around;
+}
+footer ul{
+    display:inline-flex;
+    flex-direction:row nowrap;
+    justify-content: space-between;
+}
+footer li {
+    margin:0px 20px;
+    color:gray;
+}
+footer li a {
+    color:gray;
+    text-decoration:none;
+}
+footer li  :hover{
+    color:whitesmoke;
+}
+.ion-logo-facebook:hover{
+    color:rgb(51, 51, 153);
+}
+.ion-logo-googleplus:hover{
+    color:red;
+}
+.copyright{
+    text-align:center;
+    color:gray;
+    font-size:80%;
+}
+.copyright a{
+    font-size:150%;
+    text-decoration:none;
+    color:gray;
 }

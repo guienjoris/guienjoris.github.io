@@ -7,17 +7,29 @@
     <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
 </head>
 <body>
+        <div class="menu_hide">
+            <img src="./logo.png">
+                <ul>
+                    <li><a href="#block_un">foods delivery</a></li>
+                    <li><a href="#block_deux">how it works</a></li>
+                    <li><a href="#block_trois">our cities </a></li>
+                    <li><a href="#block_cinq">sign up</a></li>
+                </ul>
+            </div>
     <header>
     <nav>
     <div class="header">
         <img src="logo-white.png" alt="logo">
+    
     
     <ul>
         <li><a href="#block_un">foods delivery</a></li>
         <li><a href="#block_deux">how it works</a></li>
         <li><a href="#block_trois">our cities </a></li>
         <li><a href="#block_cinq">sign up</a></li>
-    </ul></nav>
+    </ul>
+    
+</nav>
     </div>
     <div class="header_box">
         <h1 class="header_text">Goodbye Junk food.<br>
@@ -27,6 +39,7 @@
 
     </div>
     </header>
+    
     <section>
     <div id="block_un">
         <h2>Get food fast — not fast food</h2>
@@ -244,24 +257,43 @@
                 <div class="box_form">
                     
                    
-                        <div><span class="text_form">Name</span><input type="username" placeholder="Your name" required></div>
-                        <div><span class="text_form">Email</span><input type="email" placeholder=" Your email" required></div>
-                        <div><span class="text_form">How did you find us</span><select>
+                        <div class="form_row"><span class="text_form">Name</span><input type="username" placeholder="Your name" required></div>
+                        <div class="form_row"><span class="text_form">Email</span><input type="email" placeholder=" Your email" required></div>
+                        <div class="form_row"><span class="text_form">How did you find us</span><select>
                                 <option>Friends</option>
                                 <option>Search Engine</option>
                                 <option>Advertisement</option>
                                 <option>Other</option>
                             </select></div>
-                        <div><span class="text_form">Newsletter</span><input type="checkbox" checked><span class="text_form">Yes, please</span> </div>
-                        <div><span class="text_form">Drop us a line</span><textarea placeholder="Your message" width="300px" height="100px"></textarea></div>
-                        <div><a href="#" class="button_hungry">Send it  </a></div>
+                        <div class="form_row"><span class="text_form">Newsletter</span><div class="checkbox"><input type="checkbox" checked>Yes, please</div></div>
+                        <div class="form_row"><span class="text_form">Drop us a line</span><textarea placeholder="Your message" width="300px" height="100px"></textarea></div>
+                        <div class="form_row"><a href="#" class="button_send">Send it  </a></div>
                    
                     
                 </div>
             </form>    
 </section>
 <footer>
-    
+    <div class="footer_ul">
+        <div class="li_footer">
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">iOS App</a></li>
+            <li><a href="#">Android App</a></li>
+        </ul>
+        </div>
+        <div>
+            <ul>
+                <li><i class="icon ion-logo-facebook"></i></li>
+                <li><i class="icon ion-logo-twitter"></i></li>
+                <li><i class="icon ion-logo-googleplus"></i></li>
+                <li><i class="icon ion-logo-instagram"></i></li>
+            </ul>
+        </div>
+    </div>
+    <p class="copyright">&#169;Copie du site Omnifood pour un exercice <a href="simplon.com">Simplon.co </a> </p>
 </footer>
 
 
